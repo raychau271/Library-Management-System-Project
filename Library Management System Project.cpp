@@ -4,11 +4,17 @@
 #include <iostream>
 using namespace std;
 
+void main_menu();
+
 int main(){
 
-	int option;
+	main_menu();
+	
+}
 
-	do{
+void main_menu() {
+	int option;
+	do {
 		cout << "Main Menu" << endl;
 		cout << endl;
 		cout << "01. Book Issue" << endl;
@@ -23,5 +29,8 @@ int main(){
 		cin >> option;
 		cout << endl;
 	} while (option < 1 || option > 4);
-	
 }
+
+
+
+
